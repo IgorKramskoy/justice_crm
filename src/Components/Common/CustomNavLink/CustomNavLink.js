@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-
+import { ReactSVG } from 'react-svg'
 import { StylesBox } from './StylesBox.styles';
 
 export const CustomNavLink = ({path, image, text, onClick}) => {
@@ -7,7 +7,7 @@ export const CustomNavLink = ({path, image, text, onClick}) => {
     <NavLink to={path} onClick={onClick} >
       <StylesBox>
         <StylesBox mode="image">
-          <img src={image} alt="image"/>
+          <ReactSVG src={image}/>
         </StylesBox>
         <StylesBox mode="text">
           {text}

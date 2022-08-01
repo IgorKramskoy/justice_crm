@@ -1,10 +1,11 @@
 import './App.css';
+import { Box } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
+    <Box>
       Start
-    </div>
+    </Box>
   );
 }
 

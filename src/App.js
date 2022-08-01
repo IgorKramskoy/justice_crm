@@ -1,11 +1,19 @@
 import './App.css';
-import { Box } from '@mui/material';
+import { Wrapper } from './Components/Common/Wrapper';
+import { Route, Routes } from 'react-router-dom';
+import { routes } from './routes'
 
 function App() {
   return (
-    <Box>
-      Start
-    </Box>
+    <div className="App">
+      <Wrapper>
+        <Routes>
+          {routes.map(({path, element}) => (
+            <Route key={path} path={path} element={element}/>
+          ))}
+        </Routes>
+      </Wrapper>
+    </div>
   );
 }
 
